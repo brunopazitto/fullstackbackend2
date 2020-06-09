@@ -12,12 +12,12 @@ const io = require('socket.io')(server);
 
 
 var corsOptions ={
-    origin:  'http://localhost:3000',
+    origin:  'https://fullstackfrontend1.herokuapp.com/',
     optionsSuccessStatus : 200
 }
 
 //configurações
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 //Conexão com o banco de dados
